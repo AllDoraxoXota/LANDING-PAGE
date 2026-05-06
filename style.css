@@ -1,0 +1,138 @@
+/* Centraliza o retângulo na tela */
+body {
+    background-color: #af9573; /* Cor bege do fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Retângulo principal (tudo dentro dele) */
+.landing-pai {
+    background-color: #186d6d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 90%;
+    gap: 30px;
+    box-shadow: 10px 15px 30px rgb(0, 0, 0);
+    .landing-pai {
+    flex-direction: column;
+    padding: 25px;
+    }
+}
+
+/* Coluna esquerda (texto + inputs) */
+.lado-esquerdo {
+    flex: 1;
+    min-width: 280px;
+    .lado-esquerdo {
+    width: 50%;
+    }
+
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+/* como seu <img> está sem src no HTML, deixamos um placeholder discreto */
+.logo-area img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 15px 30px rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.content .subtitle {
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.content h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 0 0 12px;
+    line-height: 1.25;
+}
+
+.texto {
+    margin: 0 0 18px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.75);
+    width: 50%;
+}
+
+/* Form (à esquerda, dentro do retângulo) */
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 360px;
+}
+
+.dados input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.dados input:focus {
+    border-color: rgba(0, 0, 0, 0.45);
+}
+
+.dados button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* Foto à direita (dentro do retângulo) */
+.lado-direito {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .lado-direito
+    width: 50%;
+    
+}
+
+img{
+    margin-right: 85px;
+}
+.coz {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid white;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    .coz {
+    width: 170px;
+    height: 170px;
+    }
+}
+
